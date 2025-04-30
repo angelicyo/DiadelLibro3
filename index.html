@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia del Idioma</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Título principal de la página -->
+    <h1>Dia del Idioma - 23 de abril</h1>
+
+<!-- Contenedor del slider de imágenes -->
+    <div class="slider">
+        <ul>
+            <!-- Imagen 1 del slider -->
+            <li><img src="imagenes/imagen 1.jpg" alt=""></li>
+            <!-- Imagen 2 del slider -->
+            <li><img src="imagenes/imagen 2.jpg" alt=""></li>
+            <!-- Imagen 3 del slider -->
+            <li><img src="imagenes/imagen 3.png" alt=""></li>
+            <!-- Imagen 4 del slider -->
+            <li><img src="imagenes/imagen 4.png" alt=""></li>
+            <!-- Imagen 5 del slider -->
+            <li><img src="imagenes/imagen 5.png" alt=""></li> 
+        </ul>
+    </div>
+
+<!-- Subtítulo de sección -->
+    <h2>Dia del Idioma</h2>
+
+<!-- Texto introductorio sobre el Día del Idioma -->
+    <h3>
+        El Día del Idioma se celebra para conmemorar la riqueza, historia y evolución de la lengua, especialmente del idioma español. 
+        Se celebra el 23 de abril en honor a Miguel de Cervantes Saavedra, autor de Don Quijote de la Mancha, quien falleció ese día en 1616. 
+        Esta fecha busca promover el uso correcto del idioma, valorar la literatura y reflexionar sobre el papel del lenguaje en la identidad cultural.
+    </h3>
+
+<!-- Contenedor de dos bloques informativos -->
+    <div class="texto">
+        
+        <!-- Primer bloque informativo -->
+        <div class="bloque1">
+            <h4>¿Por qué se celebra el Dia del Idioma?</h4>
+            <h5>
+                El Día del Idioma se celebra el 23 de abril en honor a Miguel de Cervantes Saavedra, una de las figuras más importantes de la literatura en español.
+                Esta fecha fue elegida porque coincide con el día de su fallecimiento, y busca rendir homenaje no solo a su legado, 
+                sino también a la importancia del idioma como medio para preservar la cultura, la historia y la identidad de los pueblos hispanohablantes.
+            </h5>
+        </div>
+            
+        <!-- Segundo bloque informativo -->
+        <div class="bloque2">
+            <h4>Importancia</h4>
+            <h5>
+                Una de las cosas más importantes del Día del Idioma es que nos invita a reflexionar sobre el valor de nuestra lengua como herramienta de comunicación, expresión y unión cultural. 
+                Además, es una oportunidad para fomentar la lectura, el respeto por el buen uso del idioma y reconocer el legado de grandes escritores que han enriquecido el español a lo largo del tiempo.
+            </h5>
+        </div>
+    </div>
+
+    <h2>Sobre el Idioma</h2>
+    <table>
+        <tr>
+            <td>Países hispanohablantes oficiales</td>
+            <td>España, México, Colombia, Argentina, Perú, Chile, Venezuela, Ecuador, Guatemala, Cuba, Bolivia, Honduras, Paraguay, El Salvador, Nicaragua, Costa Rica, Puerto Rico, Panamá, Uruguay, República Dominicana, Guinea Ecuatorial</td>
+        </tr>
+        <tr>
+            <td>Autores representativos</td>
+            <td>- Miguel de Cervantes (España)
+                - Gabriel García Márquez (Colombia)
+                - Pablo Neruda (Chile)
+                - Sor Juana Inés de la Cruz (México)</td>
+        </tr>
+        <tr>
+            <td>Instituciones clave</td>
+            <td>- Real Academia Española (RAE)
+                - Instituto Cervantes (promoción del español en el mundo)</td>
+        </tr>
+    </table>
+    <button onclick="mostrarTabla()" style="font-size: 18px; padding: 10px 20px; cursor: pointer;">Más Información</button>
+
+    <div id="tablaOculta" style="display: none; margin-top: 20px;">
+    <table>
+        <tr>
+            <td>Palabras poco usadas</td>
+            <td>- Zángano (persona floja)
+                - Ñáñara (escalofrío)
+                - Perendeca (mujer de vida alegre)
+                - Recoveco (rincón escondido)</td>
+        </tr>
+        <tr>
+            <td>Dialetos del español</td>
+            <td>- Español castellano (España)
+                - Español rioplatense (Argentina y Uruguay)
+                - Español caribeño (Cuba, PR, RD, costa norte)
+                - Español andino (Perú, Bolivia, Ecuador)
+                - Español mexicano
+                - Español centroamericano</td>
+        </tr>
+        <tr>
+            <td>Curiosidades</td>
+            <td>- Es el segundo idioma más hablado del mundo por número de hablantes nativos.
+                - Tiene más de 93.000 palabras registradas en el Diccionario de la RAE.
+                - El español tiene 22 academias en todo el mundo que regulan su uso.</td>
+        </tr>
+    </table>
+    </div>
+    <h2>Formulario de Contacto</h2>
+
+    <!-- Formulario con campos para nombre y correo -->
+    <form id="formContacto">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <h2>Cambiar color de fondo</h2>
+    <button id="cambiarFondo">Haz clic o pasa el mouse</button>
+    <script src="main.js"></script>
+</body>
+<footer class="footer">
+    <p>Página creada por Angelica Collazo</p>
+</footer>
+</html>

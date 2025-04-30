@@ -1,0 +1,225 @@
+/* Estilo para el título principal */
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 80px; /* Tamaño grande para destacar */
+    background-color: #97b3fa; /* Fondo azul claro */
+    margin-top: 20px; /* Agrega espacio en la parte superior del título */
+    font-family: monospace; /* Fuente de tipo monoespaciada */
+    border-radius: 80%; /* Bordes muy redondeados, estilo de óvalo/círculo */
+}
+
+/* Contenedor general del slider */
+.slider {
+    width: 95%; /* Ocupa el 95% del ancho disponible */
+    margin: auto; /* Centra el slider horizontalmente */
+    overflow: hidden; /* Oculta contenido que se salga del contenedor */
+}
+
+/* Lista del slider (contenedor de las imágenes) */
+.slider ul {
+    display: flex; /* Alinea las imágenes en fila */
+    padding: 0; /* Sin espacio interno */
+    width: 500%; /* 4 imágenes, cada una ocupa 100% */
+    animation: cambio 25s infinite; /* Aplica la animación definida abajo */
+}
+
+/* Cada imagen dentro del slider */
+.slider li {
+    width: 100%; /* Ocupa todo el espacio del slider */
+    list-style: none; /* Quita los estilos de lista (puntos, etc.) */
+}
+
+/* Imágenes del slider */
+.slider img {
+    width: 100%; /* Ocupan todo el ancho del contenedor */
+    display: block; /* Elimina espacios debajo de la imagen */
+    max-height: 300px; /* Limita la altura para que no sean demasiado grandes */
+    object-fit: contain; /* Ajusta la imagen recortando si es necesario */
+    object-position: center; /* Centra la imagen recortada */
+}
+
+/* Animación para el movimiento del slider */
+@keyframes cambio {
+    0% { margin-left: 0; }       /* Imagen 1 visible */
+    16% { margin-left: 0; }      /* Espera 4 segundos */
+
+    20% { margin-left: -100%; }  /* Muestra la imagen 2 */
+    36% { margin-left: -100%; }  /* Espera 4 segundos */
+
+    40% { margin-left: -200%; }  /* Imagen 3 */
+    56% { margin-left: -200%; }
+
+    60% { margin-left: -300%; }  /* Imagen 4 */
+    76% { margin-left: -300%; }
+
+    80% { margin-left: -400%; }  /* Imagen 5 */
+    100% { margin-left: -400%; }
+}
+
+/* Subtítulo grande */
+h2 {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Subtítulo pequeño o texto informativo */
+h3 {
+    font-weight: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+/* Contenedor de texto con dos columnas (bloque1 y bloque2) */
+.texto {
+    display: flex; /* Coloca los bloques en fila */
+    justify-content: space-between; /* Espacio entre los bloques */
+    gap: 40px; /* Espacio entre los bloques */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Primer bloque de información */
+.bloque1 {
+    width: 50%; /* Ocupa la mitad del contenedor */
+    border-radius: 20%; /* Bordes redondeados */
+    background-color: aliceblue; /* Fondo azul claro */
+}
+
+/* Segundo bloque de información */
+.bloque2 {
+    width: 50%;
+    border-radius: 20%;
+    background-color: aliceblue;
+}
+
+/* Título dentro de los bloques */
+h4 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center; /* Centrado dentro del bloque */
+}
+
+/* Texto descriptivo dentro de los bloques */
+h5 {
+    font-weight: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+}
+/* Estilos generales para la tabla */
+table {
+    width: 90%; /* Ancho del 90% de la pantalla */
+    margin: 40px auto; /* Margen arriba/abajo de 40px y centrado automático */
+    border-collapse: collapse; /* Quita los espacios entre bordes de celdas */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra alrededor para darle efecto de tarjeta */
+  }
+  
+  /* Estilos generales para todas las celdas (td) */
+  td {
+    border: 1px solid #ccc; /* Bordes finos grises alrededor de cada celda */
+    padding: 20px; /* Espaciado interno para que el contenido respire */
+    text-align: left; /* Alinear texto a la izquierda */
+    vertical-align: top; /* Alinear el contenido verticalmente al inicio */
+    font-size: 16px; /* Tamaño de fuente en las celdas */
+    color: #333; /* Color de texto gris oscuro para mejor lectura */
+  }
+  
+  /* Estilo para las filas pares (2da, 4ta, etc.) */
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris muy claro para alternar filas y mejorar lectura */
+  }
+  
+  /* Estilo cuando el mouse pasa encima de una fila */
+  tr:hover {
+    background-color: #e6f2ff; /* Color azul claro al pasar el mouse por una fila */
+  }
+  
+  /* Estilo específico para la primera celda de cada fila (títulos) */
+  td:first-child {
+    font-weight: bold; /* Texto en negritas para resaltar */
+    background-color: aliceblue; /* Fondo gris claro diferente al resto */
+    width: 30%; /* Ocupa el 30% del ancho de la tabla */
+  }
+body {
+    /* Aplica una transición suave cuando cambia el color de fondo */
+    transition: background-color 0.5s;
+}
+
+button {
+    /* Añade espacio interno al botón para que sea más grande y cómodo de pulsar */
+    padding: 10px 20px;
+  
+    /* Tamaño de la fuente del texto del botón */
+    font-size: 16px;
+  
+    /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es interactivo */
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif; /* Establece una fuente clara y moderna */
+    background-color: #ffffff;      /* Fondo blanco para una apariencia limpia */
+    padding: 20px;                  /* Espaciado alrededor del contenido */
+    color: #333;                    /* Texto en color gris oscuro para buena legibilidad */
+  }
+  
+  h2 {
+    color: #2c3e50;                 /* Color de texto del título en azul grisáceo */
+    margin-top: 40px;                /* Espacio superior para separar el título de otros elementos */
+  }
+  
+  form {
+    background-color: #f9f9f9;      /* Fondo suave para el formulario */
+    padding: 20px;                  /* Espaciado dentro del formulario */
+    border-radius: 12px;            /* Bordes redondeados para un diseño más suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para darle profundidad */
+    max-width: 400px;               /* Limita el ancho máximo del formulario */
+    margin-bottom: 30px;            /* Espacio abajo para separar de otros elementos */
+  }
+  
+  label {
+    display: block;                 /* Cada etiqueta ocupa su propia línea */
+    margin: 12px 0 5px;             /* Espaciado alrededor de las etiquetas */
+    font-weight: bold;             /* Hace que el texto de la etiqueta sea en negrita */
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 100%;                    /* Los campos de entrada ocupan todo el ancho disponible */
+    padding: 10px;                  /* Relleno interno para mayor comodidad al escribir */
+    border: 1px solid #ccc;         /* Borde gris claro */
+    border-radius: 8px;             /* Bordes redondeados para un look más suave */
+    box-sizing: border-box;         /* Asegura que el padding y el borde estén incluidos en el ancho */
+  }
+  
+  button {
+    background-color: #3498db;      /* Fondo azul brillante para el botón */
+    color: white;                   /* Texto blanco en el botón */
+    border: none;                   /* Eliminar bordes predeterminados */
+    padding: 12px 20px;             /* Relleno generoso para que el botón sea cómodo de hacer clic */
+    border-radius: 8px;             /* Bordes redondeados para coincidir con el estilo general */
+    font-size: 16px;                /* Tamaño de texto adecuado para el botón */
+    margin-top: 15px;               /* Espacio superior para separar el botón de otros elementos */
+    cursor: pointer;                /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color del botón */
+  }
+  
+  button:hover {
+    background-color: #2980b9;      /* Cambia a un azul más oscuro al pasar el mouse */
+  }
+  .footer {
+    background-color: #2c3e50;  /* Color de fondo oscuro para el pie de página */
+    color: white;               /* Texto blanco para resaltar */
+    text-align: center;         /* Centra el texto */
+    padding: 20px;              /* Espaciado interno */
+    position: relative;         /* Asegura que el pie de página no se mueva con el contenido */
+    bottom: 0;                  /* Fija el pie de página en la parte inferior */
+    width: 100%;                /* Asegura que ocupe todo el ancho de la pantalla */
+    font-family: Arial, sans-serif; /* Fuente moderna y legible */
+  }
+  
+  .footer p {
+    margin: 0;                  /* Elimina los márgenes alrededor del texto */
+    font-size: 16px;             /* Tamaño de fuente legible */
+  }
